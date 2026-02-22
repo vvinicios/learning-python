@@ -17,6 +17,10 @@ class FrenchDeck:
 
     def __getitem__(self, position):
         return self._cards[position]
+    
+def spades_high(card):
+rank_value = FrenchDeck.ranks.index(card.rank)
+return rank_value * len(suit_values) + suit_values[card.suit
 
 # Instancio minha variável com a Classe
 meu_baralho = FrenchDeck()
