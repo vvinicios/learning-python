@@ -17,3 +17,14 @@ class FrenchDeck:
 
     def __getitem__(self, position):
         return self._cards[position]
+
+# Instancio minha variável com a Classe
+meu_baralho = FrenchDeck()
+
+from random import choice
+carta = choice(meu_baralho)
+# print(carta)
+
+# Para cada carta retirada aleatoriamente do baralho, mas o range nos dá apenas 11 itens, ou seja, 12 cartas para cada naipe
+for carta in meu_baralho:
+    print(carta)
